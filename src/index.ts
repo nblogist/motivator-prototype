@@ -23,11 +23,16 @@ function decide(state: MotivationState): Motivation {
   return sorted[0][0] as Motivation;
 }
 
-// Example simulation
-const input = { userNeed: 7, threatLevel: 3 };
-const state = calculateMotivations(input);
-const action = decide(state);
+function main() {
+  const args = process.argv.slice(2).map(Number);
+  const userNeed = args[0] ?? 5;
+  const threatLevel = args[1] ?? 5;
 
-console.log('Input Signals:', input);
-console.log('Motivation Weights:', state);
-console.log('Selected Action:', action);
+  console.log(`\n▶ Running Motivator with userNeed=${userNeed}, threatLevel=${threatLevel}`);
+  const state = calculateMotivations({ userNeed, threatLevel });
+  const action = decide(state);
+  console.log(`Motivation Weights:`, state);
+  console.log(`⇒ Selected Action:`, action, `\n`);
+}
+
+main();
