@@ -22,25 +22,15 @@ A chatbot can decide whether to:
 2. Install dependencies: `npm install`
 3. Run the prototype: `npm start`
 
-## Interactive Demo
+## Web Demo
 
-You can try different inputs right now:
+A zero-friction UI is available:
 
-# default (userNeed=5, threatLevel=5)
-npm start
+1. `cd ui && npm install`
+2. `npm run dev`
+3. Open http://localhost:3000 in your browser
 
-# high help demand
-npm start -- 9 2
-
-# exploration mode
-npm start -- 2 1
-
-# danger zone
-npm start -- 3 9
-
-# Demo
-You can also run `./demo.sh` to see three example scenarios.
-note: pls make it executable `chmod +x demo.sh` before running it.
+Or see it live at: https://motivator-prototype.vercel.app/
 
 ## License
 
