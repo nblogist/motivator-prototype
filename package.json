@@ -1,0 +1,16 @@
+{
+  "name": "motivator-prototype",
+  "version": "0.1.0",
+  "description": "Minimal AGI Motivation Engine Prototype",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "ts-node src/index.ts"
+  },
+  "license": "GPL-3.0",
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^4.9.5",
+    "ts-node": "^10.9.1"
+  }
+}

@@ -16,6 +16,12 @@ A chatbot can decide whether to:
 - explore new data sources (if idle),
 - or stay idle (if threatLevel is high).
 
+## Getting Started
+
+1. Clone the repo: `git clone https://github.com/nblogist/motivator-prototype.git`
+2. Install dependencies: `npm install`
+3. Run the prototype: `npm start`
+
 ## License
 
 GNU GPL v3
